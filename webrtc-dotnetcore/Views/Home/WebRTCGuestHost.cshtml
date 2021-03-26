@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Whirlwind";
+}
+
+@section StyleSheets{
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/webrtc.css" type="text/css" />
+}
+
+<div class="roomCreate" id="hideCreateRoom">
+    <div class="col-sm-3">
+    <label for="name">Room Name:</label>
+    <input type="text" id="roomNameTxt" />
+    </div>
+    <div class="col-sm-3">
+    <label for="Password">Room Password:</label>
+    <input type="text" id="roomPassTxt" />
+    </div>
+    <button id="createRoomBtn">Create</button>
+</div>
+
+
+<div class="borderLine" id="hideBorder"></div>
+
+<div style="background-color:powderblue;" class="container">
+    <div class="connectionStatus" id="hideConectionStatus">
+        <p id="connectionStatusMessage">*You can create your own room</p>
+    </div>
+    <h5 id="hideVideoChatText">Video chat</h5>
+    <div class="videoArea">
+        <video id="localVideo" autoplay playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/js/webrtcGuest.js"></script>
+}

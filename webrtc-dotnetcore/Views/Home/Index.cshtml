@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    h1 {
+        text-align: center;
+        padding-top: 20px ;
+        padding-bottom:10px;
+    }
+    body {
+        background-color: white;
+    }
+    p {
+        text-align: center;
+    }
+    div {
+        text-align: center;
+    }
+    a.button {
+        font: bold 15px Arial;
+        text-decoration: none;
+        background-color: #007BFF;
+        color: #FFFFFF;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #CCCCCC;
+    }
+</style>
+
+<div>
+    <h1> Welcome to whirlwind</h1>
+    <p>
+        At whirlwind you can have video/audio meeting with friends and acquaintance
+    </p>
+    <div class="clearfix">
+        <a class="button" asp-area="" asp-controller="Home" asp-action="GuestHost">Host Meeting</a>
+        <a class="button" asp-area="" asp-controller="Home" asp-action="GuestJoin">Join Meeting</a>
+    </div>
+</div>
