@@ -1,5 +1,4 @@
 # WebRTC with ASP.NET Core
-This is a of using WebRTC with ASP.NET Core as a signaling server.
 WebRTC allows direct peer-to-peer communication to work inside web pages.
 
 ## Signaling
